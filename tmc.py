@@ -14,5 +14,9 @@ def generate_problem():
     answer = eval(expr)
     return expr, answer
 
-expr, answer = generate_problem()
-print(expr, answer)
+for i in range(TOTAL_PROBLEMS):
+    expr, answer = generate_problem()
+    while True:
+        guess = input(f"Problem #" + str(i+1) + ": " + expr + " = ")
+        if guess == str(answer):
+            break
