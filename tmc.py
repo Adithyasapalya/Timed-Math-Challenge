@@ -1,3 +1,4 @@
+# A Time based match challenge program, very customizable for different types of arithmetic problems.
 import random
 import time
 
